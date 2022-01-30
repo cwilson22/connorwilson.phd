@@ -1,30 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Home';
-import Projects from './Projects';
-import Publications from './Publications';
-import Publicity from './Publicity';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Projects from "./Projects";
+import Publications from "./Publications";
+import Publicity from "./Publicity";
+import Notion from "./Notion";
 
 const Pages = ({ user }) => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home user={user} />
-        </Route>
-        <Route exact path="/publications">
-          <Publications user={user} />
-        </Route>
-        <Route exact path="/projects">
-          <Projects user={user} />
-        </Route>
-        <Route exact path="/publicity">
-          <Publicity user={user} />
-        </Route>
-        <Route path="*">
-          <Home user={user} />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home user={user} />} />
+        <Route path="/publications" element={<Publications user={user} />} />
+        <Route path="/projects" element={<Projects user={user} />} />
+        <Route path="/publicity" element={<Publicity user={user} />} />
+        <Route path="/predicting-behaviour" element={<Notion user={user} />} />
+        <Route path="*" element={<Home user={user} />} />
+      </Routes>
     </Router>
   );
 };
