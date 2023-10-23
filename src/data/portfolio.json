@@ -1,45 +1,43 @@
 {
   "basics": {
-    "name": "Tarik Crnovrsanin",
+    "name": "Connor Wilson",
     "picture": "https://avatars0.githubusercontent.com/u/58340587?v=4",
     "label": "",
     "headline": "",
-    "summary": "I am a PostDoc with Cody Dunne at Data Visualization at Khoury of Northeastern University. My research focuses on visualizations, techniques, and systems for a range of datasets, including static and dynamic networks, radio signals, and fire data. \n\nMy enjoyment of learning and conducting research extends beyond my graduate career. I combine my love of research and 5+ years of FDM printing to develop new flinging foam methods. I 3D design and engineer products from concept to full production.  I also utilize my visualization skills to create interfaces that allow customers to customize and view their purchases live on the web. ",
-    "website": "https://tarikc.net",
+    "summary": "I am a PhD student with Cody Dunne at Northeastern University's Data Visualization Lab. My research is on network visualization and mathematical optimization, with a focus on quantifying aesthetics in network visualizations.\n\nI have a passion for open science and education. I love being able to make information available for anyone to use—whether that's by being a tutor or teaching assistant, finding and wrangling years worth of uncatalogued benchmark datasets, or by unearthing new and faster visualization techniques with my research.",
+    "website": "http://connorwilson.phd",
     "blog": "",
     "yearsOfExperience": 5,
     "email": "",
-    "region": "Davis, California",
+    "region": "Boston, Massachusetts",
     "location": {},
     "phone": "",
     "profiles": [
       {
         "network": "GitHub",
-        "username": "turokhunter",
-        "url": "https://github.com/Turokhunter",
+        "username": "cwilson22",
+        "url": "https://github.com/cwilson22",
         "iconName": "github"
       },
       {
-        "network": "Linkedin",
-        "url": "https://www.linkedin.com/in/tarik-crnovrsanin-8b0aa3100/",
-        "username": "@Tarik Crnovrsanin",
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/connor-wilson-142522169/",
+        "username": "@Connor Wilson",
         "iconName": "linkedin"
+      },
+      {
+        "network": "Vis Lab Homepage",
+        "url": "https://vis.khoury.northeastern.edu/people/Connor-Wilson/",
+        "iconName": "scholar"
       }
     ]
   },
   "skills": [
     {
-      "name": "C++",
+      "name": "Python",
       "level": "Expert",
       "rating": 5,
-      "yearsOfExperience": 10,
-      "keywords": []
-    },
-    {
-      "name": "Python",
-      "level": "Advance",
-      "rating": 4,
-      "yearsOfExperience": 4,
+      "yearsOfExperience": 5,
       "keywords": []
     }
   ],
@@ -53,267 +51,65 @@
   ],
   "selectedpapers" : [
     {
-      "title": "Drawing Graphs with Multi-level Maps",
-      "summary": "We present a method for drawing a graph with superimposed multi-level maps. Our method uses either a provided or derived hierarchy of the graph to create sub-graph regions of the map at varying zoom levels.",
-      "image" : "mgmap.png",
+      "title": "Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings",
+      "summary": "We categorize the state-of-the-art linear programming formulations for exact crossing minimization on layered networks and evaluate nine new and existing techniques. Through an expansive computational evaluation, we explore how the techniques assist or inhibit one another. Our best-performing techniques yielded a median improvement of 2.5-17x depending on the solver used.",
+      "image" : "ILPteaser.svg",
       "link" : "/publications"
     },
     {
-      "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization",
-      "summary": "We present a machine learning approach to large graph visualization based on computing the topological similarity of graphs using graph kernels. For a given graph, our approach can show what the graph would look like in different layouts and estimate their corresponding aesthetic metrics.",
-      "image" : "GraphLook.png",
+      "title": "A collection of benchmark datasets for evaluating graph layout algorithms",
+      "summary": "We built a website to help graph drawing researchers find benchmark datasets to use for evaluating graph layout algorithms.",
+      "image" : "benchmark.png",
       "link" : "/publications"
     },
     {
-      "title": "An Incremental Layout Method for Visualizing Online Dynamic Graphs",
-      "summary": "A novel incremental layout method designed for online dynamic graphs that uses the concept of 'energy' to move nodes with high energy into low energy states. Our resulting visualization maintains readability of the graph structure and is efficient in laying out these changing networks.",
-      "image" : "Incremental.png",
+      "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
+      "summary": "We introduce Indy Survey Tool to help authors develop companion websites for survey papers across diverse fields of study. The versatility of Indy Survey Tool enables researchers to delve into the correlations between categorizations in survey data, an essential aspect of research that can reveal gaps in the literature and highlight promising areas for future exploration.",
+      "image" : "indy.png",
       "link" : "/publications"
     }
 ],
-  "projects":  [
-      {
-        "title": "Research",
-        "summary" : "My research spans networks, information visualization, and algorithms. Specifically, it focuses on the implementation of new algorithms to improve visual understanding and analysis. The projects below are part of my Master's and Ph.D. research. Not all of these projects became papers but nonetheless have interesting elements worth sharing.",
-        "entries": [
-          {
-            "title": "Coming soon",
-            "html" : [
-              { "p" : "Still under construction."}
-            ]
-          }
-        ]
-      },
-      {
-        "title": "3D design",
-        "summary" : "These are some of the 3D design projects I worked on as part of a hobby turned side business. These projects fulfill the same desire to conduct research that my graduate work provides. They allow me to apply my years of research and additive manufacture experience into a new domain.",
-        "entries": [
-          {
-            "title": "Jupiter",
-            "html" : [
-              { "p" : "This project was the first full blaster I created in collaboration with Luke (Out of Darts). Luke created several prototypes showing the possibility of having a minimized Rival Blaster (Fig. A Left). He asked me to improve the prototype design and create something that he could sell to his customers, shown in Fig. A Right."},
-              { "image":
-                {
-                  "src": "JupiterOldvsNew.png",
-                  "caption": "Figure A. Evolution of Jupiter. Prototype version on left and final version on the right.",
-                  "width" : 720
-                }
-              },
-              { "p" : "Beyond the visual enhancement, I implemented several Quality of Life improvements and additional features. Externally, I completely redesigned the body to hide all wire channels, improved the grip, added a battery tray, and provided a comfortable placement of the trigger finger.  Internally, some changes include ease of assembling and response trigger press.  I also replaced a friction-fit clip lock mechanism with a more durable ball detent style. For a complete look at the modification, please check out the video on the left, and Jupiter's hidden features can be found in the video on the right."},
-              [
-                { "video": {
-                  "src":"https://www.youtube.com/embed/nvSVqwGUw-E",
-                  "width": 374,
-                  "height": 210,
-                  "allow" : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  }
-                },
-                { "video": {
-                  "src":"https://www.youtube.com/embed/A4QA7Ux4oYA",
-                  "width": 374,
-                  "height": 210,
-                  "allow" : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  }
-                }
-              ],
-              { "p" : "The Jupiter has released to high praise and, as of the time of writing this, has over 2 million collective views. A review of the blaster can be found in the video below from one of the most popular Nerf channels."},
-              { "video": {
-                "src":"https://www.youtube.com/embed/Yv2yhSZJvL4",
-                "width": 374,
-                "height": 210,
-                "allow" : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-
-                }
-              }
-            ] 
-          }
-        ]
-      },
-      {
-        "title": "Side Projects",
-        "summary" : "When I find the time (haha), I like to apply my visualization and programming skillset to some interesting side projects.",
-        "entries": [
-          {
-            "title": "3D Color and Option Picker",
-            "html" : [
-              { "p" : "One of the major strengths of 3D printing is the ability for the customers to customize their product by changing the color of the parts or choosing from a set of components to fit their style and personality.  Though most sites offer the ability to customize the user's purchase selection, they do not provide the means for the user to visually see their choice immediately.  There are so many possible parts and color choices that it is unreasonable for every permutation to be photographed. The lack of immediate feedback can leave the user unsure how particular color and parts combinations will look. Therefore, I created the STL Viewer and menu system that loads 3D printed files and updates them based on the customer's colors and choices in real-time."},
-              { "image":
-                {
-                  "src": "STLViewer.png",
-                  "caption": "Figure B. Illustration of the menu system and STL Viewer. The user chooses what colors and options they would prefer (on the right), and the results are displayed on the left. The Viewer allows for panning and zooming so that the user has a better idea of their choices made.",
-                  "width" : 720
-                }
-              },
-              {"p" : "We automatically generate the menu system from two JSON files. One JSON file describes where the STL file location, camera position, and product breakdown. The second JSON file contains information about filaments, such as cost tier and color in hex. This allows for a global filament file that makes adding and removing filament across all items easy. The left visualization provides basic capabilities such as zoom and pan and updates instantly based on the user selection from the menu on the right. The user selects a color by either the section menu or individually customizing each component in the section. The dropdown menu separates color based on the cost tier. As the visualization on the right cannot capture the exact color, or any nuances the filament might have such as glitter, mousing over each color provides a color correct swatch. When choosing a more expensive filament, the price changes and text updates to indicate the price difference in that section."},
-              { "link":
-                {
-                  "text" : "For a live example of the code running, please check Jupiter listing:",
-                  "url": "https://outofdarts.com/collections/jupiter/products/rival-jupiter-blaster-kit-build-it-yourself",
-                  "linkText" : "Jupiter Build it yourself"
-                }
-              },
-              { "link":
-                {
-                  "text" : "For those interested in the implementation, starting code can be found in GitHub:",
-                  "url": "https://outofdarts.com/collections/jupiter/products/rival-jupiter-blaster-kit-build-it-yourself",
-                  "linkText" : "Github"
-                }
-              }
-            ]
-          },
-          {
-            "title": "Menu Creator",
-            "html" : [
-              { "p" : "As with any design, one innovation can cause a cascading effect. The menu system shown above is great for the customers as it provides more customization of products. An unintended by-product of such a design is the act of creating said menu system becomes more complicated. Though JSON files are a common format for passing data, they are not intuitive to construct, especially for an average individual lacking training in creating such listings. To combat this issue and standardize the JSON file's construct, we create a Menu Creator tool."},
-              { "image":
-                {
-                  "src": "MenuCreator.png",
-                  "caption": "Figure C. The staff creates and populates options on the left. A live preview of the choices are shown on the top right. Lastly, variants and mapping of variants are done on the bottom right.",
-                  "width" : 720
-                }
-              },
-              {"p" : "The tool makes the process of generating the listing considerably easier. The staff can create one of three types of options; dropdown, color picker, or checkbox. More complex options are offered when the item in question needs a 3D render of it.  The tool supports duplication and reorganization and shows a live preview of the options and their selections. Once the staff is satisfied with their choice, they can use the \"Set Price\" button to create variants needed for Shopify. Variants are what Shopify uses to set prices on a combination of options. Shopify only allows 99 variants and three options. This small selection is quite limiting for 3D printed objects with 20 color choices and multiple options.  We overcome Shopify's limitation by allowing the staff to create price buckets, allowing multiple option combinations to map to the same variant or price bucket. The buckets can be made manually or automatically through the auto-populate feature."},
-              { "link":
-                {
-                  "text" : "For a live example of the code running, please check out the demo:",
-                  "url": "https://turokhunter.github.io/Menu-Creator/",
-                  "linkText" : "Git Live Example"
-                }
-              },
-              { "link":
-                {
-                  "text" : "For those interested in the implementation, the code can be found in GitHub:",
-                  "url": "https://github.com/Turokhunter/Menu-Creator",
-                  "linkText" : "Github"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ],
   "publications": {
     "journal" : [
       {
-        "title": "Concise provenance of interactive network analysis",
-        "authors":"Fujiwara T., Crnovrsanin, T., and Ma KL.",
-        "venue": "Visual Informatics 2(4), pp. 213--224, ",
-        "year":"2018",
-        "url" : "https://www.sciencedirect.com/science/article/pii/S2468502X1830055X",
-        "video" : "https://youtu.be/u_kq2-pd8u0",
-        "supplement" : "https://takanori-fujiwara.github.io/s/prov-vis/index.html",
-        "image": "concise.png"
-      },
-      {
-        "title": "An Incremental Layout Method for Visualizing Online Dynamic Graphs",
-        "authors":"Crnovrsanin, T., Chu J., and Ma KL.",
-        "venue": "Journal Graph Algorithm Application (JGAA), 21(1), pp.55--80, ",
-        "year":"2017",
-        "url" : "http://jgaa.info/accepted/2017/CrnovrsaninChuMa2017.21.1.pdf",
-        "image": "Incremental.png"
-      },
-      {
-        "title": "Visualization Techniques for Categorical Analysis of Social Networks with Multiple Edge Sets",
-        "authors":"Crnovrsanin, T., Muelder C., Faris B., Felmlee D., and Ma KL.",
-        "venue": "Social Networks, vol. 37, pp. 56--64, ",
-        "year":"2014",
-        "url" : "https://www.sciencedirect.com/science/article/abs/pii/S0378873313001044",
-        "image": "SocialNetworks.png"
-      },
-      {
-        "title": "Visual Reasoning about Social Networks using Centrality Sensitivities",
-        "authors":"Correa C., Crnovrsanin, T., and Ma KL.",
-        "venue": "IEEE Transactions Visualization Computer Graph(TVCG), vol. 18, pp. 106--120, ",
-        "year":"2012",
-        "url" : "https://ieeexplore.ieee.org/document/5669304",
-        "image": "VisualReasoning.png"
+        "title": "Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings",
+        "authors":"Wilson, C., Puerta E., Di Bartolomeo S., Crnovrsanin T., and Dunne C.",
+        "venue": "Under submission to IEEE TVCG",
+        "year":"2023",
+        "url" : "https://osf.io/5vq79/",
+        "supplement" : "https://osf.io/5vq79/",
+        "image": "ILPteaser.svg"
       }
     ],
     "conference":[
       {
-        "title": "Staged Animation Strategies for Online Dynamic Networks",
-        "authors":"Crnovrsanin, T., Shilpika, Chandrasegaran, S. and Ma KL.",
-        "venue": "IEEE Information Visualization Conference (InfoVis), ",
-        "year":"2020",
-        "url" : "https://arxiv.org/abs/2009.02005",
-        "image": "stagedAnimation.png"
+        "title": "A collection of benchmark datasets for evaluating graph layout algorithms",
+        "authors":"Di Bartolomeo S., Puerta E., Wilson, C., Crnovrsanin T., and Dunne C.",
+        "venue": "Poster at Graph Drawing and Network Visualization",
+        "year":"2023",
+        "url" : "https://osf.io/7rsau",
+        "supplement" : "https://osf.io/j7ucv/",
+        "website": "https://visdunneright.github.io/gd_benchmark_sets/",
+        "image": "benchmark.png"
       },
       {
-        "title": "An Interactive System for Exploring Historical Fire Data",
-        "authors":"Gomov M., Crnovrsanin, T., Dasu K. and Ma KL.",
-        "venue": "IEEE Pacific Visualization Symposium (PacificVis), pp. 277--281,",
-        "year":"2019",
-        "url" : "https://ieeexplore.ieee.org/document/8781588",
-        "image": "Historical.png"
+        "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
+        "authors": "Crnovrsanin T., Di Bartolomeo S., Wilson, C., and Dunne C.",
+        "venue": "In Proc. IEEE Visualization",
+        "year":"2023",
+        "url" : "https://osf.io/um9gs/",
+        "code": "https://github.com/VisDunneRight/Indy-Survey-Tool",
+        "image": "indy.png"
       },
       {
-        "title": "What Would a Graph Look Like in this Layout? A Machine Learning Approach to Large Graph Visualization",
-        "authors": "Kwon OH., Crnovrsanin, T., and Ma KL.",
-        "venue": "IEEE Transaction Visualization Computer Graph, 24(1), pp. 478--488, ",
-        "year": "2018",
-        "supplement" : "http://kwon.cs.ucdavis.edu/wgl",
-        "url" : "https://arxiv.org/abs/1710.04328",
-        "previewvide": "https://vimeo.com/230840405",
-        "code": "https://github.com/VIDILabs/glam",
-        "image": "GraphLook.png"
-      },
-      {
-        "title": "An Incremental Layout Method for Visualizing Online Dynamic Graphs",
-        "authors":"Crnovrsanin, T., Chu J., and Ma KL.",
-        "venue": "Conference on Graph Drawing and Network Visualization, pp. 16--29, ",
-        "year":"2015",
-        "url" : "https://vis.cs.ucdavis.edu/papers/tarik_incremental.pdf",
-        "image": "Incremental.png"
-      },
-      {
-        "title": "A System for Visual Analysis of Radio Signal Data",
-        "authors":"Crnovrsanin, T., Muelder C., and Ma KL.",
-        "venue": "Conference on Visual Analytics Science and Technology (VAST), pp. 33--42, ",
-        "year":"2014",
-        "url" : "https://ieeexplore.ieee.org/document/7042479/",
-        "previewvideo" : "https://vimeo.com/104495491",
-        "image": "RadioSignal.png"
-      },
-      {
-        "title": "Stimulating a Blink: Reduction of Eye Fatigue with Visual Stimulus",
-        "authors":"Crnovrsanin, T., Wang Y., and Ma KL.",
-        "venue": "Conference on Human Factors in Computing Systems(CHI), pp. 33--42, ",
-        "year":"2014",
-        "url" : "http://vis.cs.ucdavis.edu/papers/blink.pdf",
-        "previewvideo" : "https://www.youtube.com/watch?v=WXFYEfxMF8I",
-        "image": "Stimulating.png"
-      },
-      {
-        "title": "Egocentric Storylines for Visual Analysis of Large Dynamic Graphs",
-        "authors":"Muelder C., Crnovrsanin, T., Sallaberry A., and Ma KL.",
-        "venue": "IEEE Workshop on Big Data Visualization, pp. 56--62, ",
-        "year":"2013",
-        "url" : "https://ieeexplore.ieee.org/document/6691715",
-        "image": "Egocentric.png"
-      },
-      {
-        "title": "Visual Recommendations for Network Navigation",
-        "authors":"Crnovrsanin, T., Liao I., Wu Y., and Ma KL.",
-        "venue": "In Proceedings of the Eurovis, vol. 30, pp. 1081--1090, ",
-        "year":"2011",
-        "url" : "http://vis.cs.ucdavis.edu/papers/visual_recommendation.pdf",
-        "image": "Recommendations.png"
-      },
-      {
-        "title": "Social Network Discovery based on Sensitivity Analysis",
-        "authors":"Crnovrsanin, T., Correa C., and Ma KL.",
-        "venue": "Proceedings International Conference of Advances in Social Networks Analysis and Mining (ASONAM), pp. 107--112, ",
-        "year":"2009",
-        "url" : "https://ieeexplore.ieee.org/document/5231923",
-        "image": "Sensitivity.png"
-      },
-      {
-        "title": "Proximity-based Visualization of Movement Trace Data",
-        "authors":"Crnovrsanin, T., Muelder C., Correa C., and Ma KL.",
-        "venue": "Conference on Visual Analytics Science and Technology (VAST), pp. 11--18, ",
-        "year":"2009",
-        "url" : "https://ieeexplore.ieee.org/document/5332593",
-        "image": "Proximity.png"
+        "title": "Evaluating Graph Layout Algorithms: A Systematic Review of Methods and Best Practices",
+        "authors": "Di Bartolomeo S., Crnovrsanin T., Saffo D., Puerta E., Wilson, C., and Dunne C.",
+        "venue": "In Proc. Computer Graphics Forum EuroVis",
+        "year": "2023",
+        "supplement" : "https://osf.io/dn5zq/",
+        "url" : "https://osf.io/ms27r/",
+        "website": "https://visdunneright.github.io/gd-comp-eval/",
+        "image": "gdsurvey.png"
       }
     ]
   },
@@ -339,20 +135,8 @@
   ],
   "awards": [
     {
-      "title": "GGCS Best Graduate Researcher Award",
-      "summary": "Recieved in 2015 at University of California, Davis"
-    },
-    {
-      "title": "Best Paper Award in 23rd International Symposium on Graph Drawing and Network Visualization",
-      "summary": "Recieved in 2015 for the paper \"An Incremental Layout Method for Visualizing Online Dynamic Graphs\"."
-    },
-    {
-      "title": "GGCS Graduate Fellowship",
-      "summary": "Recieved in 2009, 2014 at University of California, Davis"
-    },
-    {
-      "title": "Intuitive Social Network Graphs in VAST 2008 Challenge",
-      "summary": "Recieved in 2008 with C. Correa, C. Muelder, T. Crnovrsanin, J. Shearer, KL. Ma." 
+      "title": "Graph Drawing best poster honorable mention",
+      "summary": "Recieved in 2023 for the poster \"A collection of benchmark datasets for evaluating graph layout algorithms\"."
     }
   ],
   "press": [

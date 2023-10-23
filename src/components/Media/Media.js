@@ -8,7 +8,7 @@ export const Media = ({media}) => {
         <li>
           <div>
             <FaEnvelope/>
-            <a className="text-muted"> turokhunter[at]gmail</a>
+            <a className="text-muted"> wilson.conn[at]northeastern.edu</a>
           </div>
         </li>
         {media.profiles.map((prof, idx) => (

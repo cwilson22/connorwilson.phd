@@ -9,7 +9,7 @@ const items = [
     subpath:[
       {
       name: 'Bio',
-      path: '/' 
+      path: '/'
       },
       {
         name: 'Resume',
@@ -33,32 +33,20 @@ const items = [
       },
     ]
   },
-  { name: 'Projects', path: '/projects',
-      subpath:[
-      {
-      name: 'Research',
-      path: '/projects#research' 
-      },
-      {
-        name: '3D Design',
-        path: '/projects#design' 
-      },
-      {
-        name: 'Side Work',
-        path: '/projects#side' 
-      },
-    ] 
-  },
+  // { name: 'Projects', path: '/projects',
+  //     subpath:[
+  //     {
+  //     name: 'Research',
+  //     path: '/projects#research' 
+  //     }
+  //   ] 
+  // },
   { name: 'Publicity', path: '/publicity',
       subpath:[
       {
       name: 'Awards',
       path: '/publicity#awards' 
-      },
-      {
-        name: 'Press',
-        path: '/publicity#press' 
-      },
+      }
     ] 
   },
 ];
@@ -70,7 +58,7 @@ const Header = () => {
     // <Navbar expand = "lg" bg="light" variant="light" fixed= "top">
     
     <Navbar fluid="true" expand="lg">
-      <Navbar.Brand style={{fontSize: "2rem"}} href="/">Tarik Crnovrsanin</Navbar.Brand>
+      <Navbar.Brand style={{fontSize: "2rem"}} href="/">Connor Wilson</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
