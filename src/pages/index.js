@@ -10,11 +10,11 @@ const Pages = ({ user }) => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home user={user} />} />
-        <Route path="/publications" element={<Publications user={user} />} />
+        <Route path="/connorwilson.phd/" element={<Home user={user} />} />
+        <Route path="/connorwilson.phd/publications" element={<Publications user={user} />} />
         {/* <Route path="/projects" element={<Projects user={user} />} /> */}
-        <Route path="/publicity" element={<Publicity user={user} />} />
-        <Route path="*" element={<Home user={user} />} />
+        <Route path="/connorwilson.phd/publicity" element={<Publicity user={user} />} />
+        <Route path="/connorwilson.phd/*" element={<Home user={user} />} />
       </Routes>
     </Router>
   );

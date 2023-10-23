@@ -5,7 +5,7 @@
     "label": "",
     "headline": "",
     "summary": "I am a PhD student with Cody Dunne at Northeastern University's Data Visualization Lab. My research is on network visualization and mathematical optimization, with a focus on quantifying aesthetics in network visualizations.\n\nI have a passion for open science and education. I love being able to make information available for anyone to use—whether that's by being a tutor or teaching assistant, finding and wrangling years worth of uncatalogued benchmark datasets, or by unearthing new and faster visualization techniques with my research.",
-    "website": "https://cwilson22.github.io/connorwilson.phd",
+    "website": "https://cwilson22.github.io/connorwilson.phd/",
     "blog": "",
     "yearsOfExperience": 5,
     "email": "",
@@ -16,7 +16,7 @@
       {
         "network": "GitHub",
         "username": "cwilson22",
-        "url": "https://github.com/cwilson22",
+        "url": "https://github.com/cwilson22/",
         "iconName": "github"
       },
       {
