@@ -13,9 +13,7 @@ export const Media = ({media}) => {
         </li>
         {media.profiles.map((prof, idx) => (
           <li key={idx}>
-            <a key={idx} className="text-muted"
-            href={prof.url}>
-              <div>
+            <span>
                 {(function(){
                   switch(prof.iconName){
                     case 'github':
@@ -26,8 +24,11 @@ export const Media = ({media}) => {
                       return <FaGraduationCap />
                   }
                 })()}
-                &nbsp;{prof.network}
-              </div>
+                &nbsp;
+            </span>
+            <a key={idx} className="text-muted"
+            href={prof.url}>
+              {prof.network}
             </a>
           </li>
         ))} 

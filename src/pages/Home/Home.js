@@ -10,11 +10,12 @@ const Cards = ({ items }) => {
     <Row>
       {items.map((item, index) => (
         <Card key={index} style={{ width: "22rem" }}>
-          <Card.Img variant="top" src={item.image} />
+          <Card.Img variant="top" src={process.env.PUBLIC_URL + "/" + item.image} />
           <Card.Body>
-            <Card.Title>{item.title}</Card.Title>
+            <Card.Link href={item.link}>
+            <Card.Title href={item.link}>{item.title}</Card.Title>
+            </Card.Link>
             <Card.Text>{item.summary}</Card.Text>
-            <Card.Link href={item.link}>Details</Card.Link>
           </Card.Body>
         </Card>
       ))}
@@ -27,7 +28,7 @@ const Home = ({ user }) => {
     <Layout user={user}>
       <Row>
         <Col>
-          <Image src="MyFace.jpg" width={360} />
+          <Image src={process.env.PUBLIC_URL + "/MyFace.jpg"} width={360} />
           <Media media={user.basics} />
         </Col>
         <Col>

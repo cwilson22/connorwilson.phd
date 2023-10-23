@@ -8,7 +8,8 @@ import Publicity from "./Publicity";
 
 const Pages = ({ user }) => {
   return (
-    <Router>
+    // <Router>
+    <>
       <Routes>
         <Route path="/" element={<Home user={user} />} />
         <Route path="/publications" element={<Publications user={user} />} />
@@ -16,7 +17,8 @@ const Pages = ({ user }) => {
         <Route path="/publicity" element={<Publicity user={user} />} />
         <Route path="*" element={<Home user={user} />} />
       </Routes>
-    </Router>
+    </>
+    // </Router>
   );
 };
 

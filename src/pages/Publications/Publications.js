@@ -20,7 +20,7 @@ const Papers = ({papers}) => {
         {papers.map(pub => (
             <Row>
             <Col xs={3} md={2}>
-                <StyledImage src={pub.image} thumbnail />
+                <StyledImage src={process.env.PUBLIC_URL + "/" + pub.image} thumbnail />
             </Col>
             <Col xs={12} md={8}>
                 <h4>{pub.title}</h4>
@@ -31,11 +31,16 @@ const Papers = ({papers}) => {
                 </p>
                 <p>
                     {pub.url ? <a href={pub.url} >PDF</a> : null}
-                    {pub.supplement ? <a href={pub.supplement} > Supplement</a> : null}
-                    {pub.video ? <a href={pub.url} > Video</a> : null}
-                    {pub.previewvideo ? <a href={pub.previewvideo} > Preview Video</a> : null}
-                    {pub.code ? <a href={pub.code} > Code</a> : null}
-                    {pub.website ? <a href={pub.website} > Website</a> : null}
+                    {pub.supplement ? <span> | </span> : null}
+                    {pub.supplement ? <a href={pub.supplement} >Supplement</a> : null}
+                    {pub.video ? <span> | </span> : null}
+                    {pub.video ? <a href={pub.url} >Video</a> : null}
+                    {pub.previewvideo ? <span> | </span> : null}
+                    {pub.previewvideo ? <a href={pub.previewvideo} >Preview Video</a> : null}
+                    {pub.code ? <span> | </span> : null}
+                    {pub.code ? <a href={pub.code} >Code</a> : null}
+                    {pub.website ? <span> | </span> : null}
+                    {pub.website ? <a href={pub.website} >Website</a> : null}
                 </p>
             </Col>
             </Row>

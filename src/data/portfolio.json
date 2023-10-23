@@ -54,19 +54,19 @@
       "title": "Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings",
       "summary": "We categorize the state-of-the-art linear programming formulations for exact crossing minimization on layered networks and evaluate nine new and existing techniques. Through an expansive computational evaluation, we explore how the techniques assist or inhibit one another. Our best-performing techniques yielded a median improvement of 2.5-17x depending on the solver used.",
       "image" : "ILPteaser.svg",
-      "link" : "/publications"
+      "link" : "/publications#journal"
     },
     {
       "title": "A collection of benchmark datasets for evaluating graph layout algorithms",
       "summary": "We built a website to help graph drawing researchers find benchmark datasets to use for evaluating graph layout algorithms.",
       "image" : "benchmark.png",
-      "link" : "/publications"
+      "link" : "/publications#conference"
     },
     {
       "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
       "summary": "We introduce Indy Survey Tool to help authors develop companion websites for survey papers across diverse fields of study. The versatility of Indy Survey Tool enables researchers to delve into the correlations between categorizations in survey data, an essential aspect of research that can reveal gaps in the literature and highlight promising areas for future exploration.",
       "image" : "indy.png",
-      "link" : "/publications"
+      "link" : "/publications#conference"
     }
 ],
   "publications": {
@@ -90,7 +90,7 @@
         "url" : "https://osf.io/7rsau",
         "supplement" : "https://osf.io/j7ucv/",
         "website": "https://visdunneright.github.io/gd_benchmark_sets/",
-        "image": "benchmark.png"
+        "image": "./benchmark.png"
       },
       {
         "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
