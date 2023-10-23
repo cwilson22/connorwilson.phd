@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/connorwilson.phd/static/css/main.e6c13ad2.css",
+    "main.js": "/connorwilson.phd/static/js/main.797c538e.js",
+    "static/js/787.86e70ff7.chunk.js": "/connorwilson.phd/static/js/787.86e70ff7.chunk.js",
+    "index.html": "/connorwilson.phd/index.html",
+    "main.e6c13ad2.css.map": "/connorwilson.phd/static/css/main.e6c13ad2.css.map",
+    "main.797c538e.js.map": "/connorwilson.phd/static/js/main.797c538e.js.map",
+    "787.86e70ff7.chunk.js.map": "/connorwilson.phd/static/js/787.86e70ff7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.797c538e.js"
+  ]
+}
