@@ -5,31 +5,31 @@ import { Nav, Navbar} from 'react-bootstrap';
 import { StyledNavMain, StyledNavSub } from './styles';
 
 const items = [
-  { name: 'Home', path: '/', 
+  { name: 'Home', path: '/connorwilson.phd/', 
     subpath:[
       {
       name: 'Bio',
-      path: '/'
+      path: '/connorwilson.phd/'
       },
       {
         name: 'Resume',
-        path: '/resume.pdf' 
+        path: '/connorwilson.phd/resume.pdf' 
       },
       {
         name: 'C.V.',
-        path: '/cv.pdf' 
+        path: '/connorwilson.phd/cv.pdf' 
       },
     ]
   },
-  { name: 'Publications', path: '/publications',
+  { name: 'Publications', path: '/connorwilson.phd/publications',
     subpath:[
       {
       name: 'Journal',
-      path: '/publications#journal' 
+      path: '/connorwilson.phd/publications#journal' 
       },
       {
         name: 'Conference',
-        path: '/publications#conference' 
+        path: '/connorwilson.phd/publications#conference' 
       },
     ]
   },
@@ -41,11 +41,11 @@ const items = [
   //     }
   //   ] 
   // },
-  { name: 'Publicity', path: '/publicity',
+  { name: 'Publicity', path: '/connorwilson.phd/publicity',
       subpath:[
       {
       name: 'Awards',
-      path: '/publicity#awards' 
+      path: '/connorwilson.phd/publicity#awards' 
       }
     ] 
   },
