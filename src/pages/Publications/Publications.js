@@ -20,17 +20,20 @@ const Papers = ({papers}) => {
         {papers.map(pub => (
             <Row>
             <Col xs={3} md={2}>
-                <StyledImage src={process.env.PUBLIC_URL + "/" + pub.image} thumbnail />
+                <a href={pub.url} target="_blank" rel='noreferrer'><StyledImage src={pub.image} thumbnail /></a>
             </Col>
             <Col xs={12} md={8}>
                 <h4>{pub.title}</h4>
                 <p>
                     <BoldName text={pub.authors}></BoldName>
                     {pub.venue}
+                    {". "}
                     {pub.year}
+                    {". "}
+                    {pub.doi ? <><span>DOI:</span><a href={pub.fulldoi}>{pub.doi}</a></> : null}
                 </p>
                 <p>
-                    {pub.url ? <a href={pub.url} >PDF</a> : null}
+                    {pub.url ? <a href={pub.url} >Preprint</a> : null}
                     {pub.supplement ? <span> | </span> : null}
                     {pub.supplement ? <a href={pub.supplement} >Supplement</a> : null}
                     {pub.video ? <span> | </span> : null}
@@ -53,12 +56,8 @@ const Publications = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle id='journal'>Journal Publications</SectionTitle>
-        <Papers papers = {user.publications.journal}/>
-      </div>
-      <div>
-        <SectionTitle id='conference'>Conference Publications</SectionTitle>
-        <Papers papers = {user.publications.conference}/>
+        <SectionTitle></SectionTitle>
+        <Papers papers = {user.publications}/>
       </div>
     </Layout>
   );

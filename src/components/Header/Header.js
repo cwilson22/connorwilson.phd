@@ -1,77 +1,80 @@
 import React from 'react';
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Nav, Navbar} from 'react-bootstrap';
 import { StyledNavMain, StyledNavSub } from './styles';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const items = [
   { name: 'Home', path: '/', 
-    subpath:[
-      {
-      name: 'Bio',
-      path: '/'
-      },
-      {
-        name: 'Resume',
-        path: '/resume.pdf' 
-      },
-      {
-        name: 'C.V.',
-        path: '/cv.pdf' 
-      },
-    ]
+    // subpath:[
+    //   {
+    //   name: 'Bio',
+    //   path: '/'
+    //   },
+    //   {
+    //     name: 'Resume',
+    //     path: '/resume.pdf' 
+    //   },
+    //   {
+    //     name: 'C.V.',
+    //     path: '/cv.pdf' 
+    //   },
+    // ]
   },
   { name: 'Publications', path: '/publications',
-    subpath:[
-      {
-      name: 'Journal',
-      path: '/publications#journal' 
-      },
-      {
-        name: 'Conference',
-        path: '/publications#conference' 
-      },
-    ]
+    // subpath:[
+    //   {
+    //   name: 'Journal',
+    //   path: '/publications#journal' 
+    //   },
+    //   {
+    //     name: 'Conference',
+    //     path: '/publications#conference' 
+    //   },
+    // ]
   },
   // { name: 'Projects', path: '/projects',
-  //     subpath:[
-  //     {
-  //     name: 'Research',
-  //     path: '/projects#research' 
-  //     }
-  //   ] 
   // },
-  { name: 'Publicity', path: '/publicity',
-      subpath:[
-      {
-      name: 'Awards',
-      path: '/publicity#awards' 
-      }
-    ] 
+  {
+    name: 'Employment', path: '/work',
+  },
+  { name: 'Volunteerism', path: '/publicity',
+    //   subpath:[
+    //   {
+    //   name: 'Awards',
+    //   path: '/publicity#awards' 
+    //   }
+    // ] 
+  },
+  {
+    name: 'Awards', path: '/awards',
   },
 ];
 
 const Header = () => {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     // <Navbar expand = "lg" bg="light" variant="light" fixed= "top">
     
     <Navbar fluid="true" expand="lg">
-      <Navbar.Brand style={{fontSize: "2rem"}} href="/">Connor Wilson</Navbar.Brand>
+      <LinkContainer to="/">
+        <Navbar.Brand style={{fontSize: "2rem"}} >Connor Wilson</Navbar.Brand>
+      </LinkContainer>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           {items.map((i, idx) => (
             <Nav.Item  key={idx} className="flex-column">
+              <LinkContainer to={i.path}>
               <StyledNavMain style ={{color: "#000000"}}
-                element={Link}
-                href={i.path}
                 key={i.name}
               >
                 {i.name}
               </StyledNavMain>
-              {i.subpath.map(j => (
+              </LinkContainer>
+              {i.subpath && i.subpath.map(j => (
                   <StyledNavSub
                     element={Link}
                     href={j.path}

@@ -17,3 +17,8 @@ export const Pill = styled.span`
   border-radius: 2px;
   font-weight: bold;
 `;
+
+export const PageHeader = styled.h2`
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+`;

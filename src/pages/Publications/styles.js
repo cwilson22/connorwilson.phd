@@ -5,7 +5,7 @@ export const StyledImage = styled(Image)`
     transition: transform .2s;
     &:hover {
         position: relative;
-        transform: scale(2);
+        transform: scale(2.5);
         z-index: 1;
     }
 `;
