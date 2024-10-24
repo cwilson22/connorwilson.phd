@@ -29,7 +29,7 @@ const Cards = ({ items }) => {
 const Home = ({ user }) => {
   return (
     <Layout user={user}>
-      <Row>
+      <Row className="ml-2">
         <Col>
           <Image src={"MyFace.jpg"} width={360} />
           <Media media={user.basics} />
@@ -59,7 +59,7 @@ const Home = ({ user }) => {
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row className="ml-3">
         <div>
           <SectionTitle>Selected Papers</SectionTitle>
           <Cards items={user.selectedpapers} />

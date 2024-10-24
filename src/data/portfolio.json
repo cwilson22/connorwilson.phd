@@ -26,8 +26,8 @@
         "iconName": "linkedin"
       },
       {
-        "network": "Vis Lab Webpage",
-        "url": "https://vis.khoury.northeastern.edu/people/Connor-Wilson/",
+        "network": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=FkpnwKEAAAAJ&hl=en",
         "iconName": "scholar"
       }
     ]
@@ -63,13 +63,24 @@
       "link" : "/publications"
     },
     {
-      "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
-      "summary": "We introduce Indy Survey Tool to help authors develop companion websites for survey papers across diverse fields of study. The versatility of Indy Survey Tool enables researchers to delve into the correlations between categorizations in survey data, an essential aspect of research that can reveal gaps in the literature and highlight promising areas for future exploration.",
-      "image" : "indy.png",
+      "title": "Fast and readable layered network visualizations using large neighborhood search",
+      "summary": "Graph layout algorithms that reduce edge crossings and shorten edges generally fall into two camps—quick heuristics, and optimal methods that prioritize human readability over computation speed. This work uses an optimization metaheuristic to provide the best of both worlds: high-quality layouts within a predetermined execution time.",
+      "image" : "lns_teaser.png",
       "link" : "/publications"
     }
 ],
   "publications": [
+      {
+        "title": "Fast and readable layered network visualizations using large neighborhood search",
+        "authors":"Wilson, C., Crnovrsanin T., Puerta E.,  and Dunne C.",
+        "venue": "Under Submission—TVCG",
+        "year":"2024",
+        "url" : "https://osf.io/fytk7",
+        "supplement" : "https://osf.io/w3fev/",
+        "image": "lns_teaser.png",
+        "fulldoi": "https://doi.org/10.31219/osf.io/fytk7",
+        "doi": "10.31219/osf.io/fytk7"
+      },
       {
         "title": "Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings",
         "authors":"Wilson, C., Puerta E., Di Bartolomeo S., Crnovrsanin T., and Dunne C.",
@@ -77,7 +88,7 @@
         "year":"2024",
         "url" : "https://osf.io/abz8e",
         "supplement" : "https://osf.io/5vq79/",
-        "video": "https://youtu.be/wIQnahaRsKk",
+        "previewvideo": "https://youtu.be/wIQnahaRsKk",
         "image": "ILPteaser.svg",
         "fulldoi": "https://doi.org/10.1109/TVCG.2024.3456349",
         "doi": "10.1109/TVCG.2024.3456349"
@@ -134,7 +145,7 @@
   ],
   "volunteer": [
     {
-      "organization": "Reviewed full paper submissions to IEEE PacificVis, ACM CHI, SoftwareX",
+      "organization": "Reviewed full paper submissions to IEEE PacificVis, SoftwareX",
       "position": "Reviewer",
       "start": 2023,
       "end": "present"

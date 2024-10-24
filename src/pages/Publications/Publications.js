@@ -30,14 +30,14 @@ const Papers = ({papers}) => {
                     {". "}
                     {pub.year}
                     {". "}
-                    {pub.doi ? <><span>DOI:</span><a href={pub.fulldoi}>{pub.doi}</a></> : null}
+                    {pub.doi ? <><span>DOI:</span><a href={pub.fulldoi}>{pub.doi}</a><span>.</span></> : null}
                 </p>
                 <p>
                     {pub.url ? <a href={pub.url} >Preprint</a> : null}
                     {pub.supplement ? <span> | </span> : null}
                     {pub.supplement ? <a href={pub.supplement} >Supplement</a> : null}
                     {pub.video ? <span> | </span> : null}
-                    {pub.video ? <a href={pub.url} >Video</a> : null}
+                    {pub.video ? <a href={pub.video} >Video</a> : null}
                     {pub.previewvideo ? <span> | </span> : null}
                     {pub.previewvideo ? <a href={pub.previewvideo} >Preview Video</a> : null}
                     {pub.code ? <span> | </span> : null}
