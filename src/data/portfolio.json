@@ -73,13 +73,13 @@
       {
         "title": "Fast and readable layered network visualizations using large neighborhood search",
         "authors":"Wilson, C., Crnovrsanin T., Puerta E.,  and Dunne C.",
-        "venue": "Under Submission—TVCG",
-        "year":"2024",
+        "venue": "IEEE Transactions on Visualization and Computer Graphics",
+        "year":"2025",
         "url" : "https://osf.io/fytk7",
         "supplement" : "https://osf.io/w3fev/",
         "image": "lns_teaser.png",
-        "fulldoi": "https://doi.org/10.31219/osf.io/fytk7",
-        "doi": "10.31219/osf.io/fytk7"
+        "fulldoi": "https://doi.org/10.1109/TVCG.2025.3537898",
+        "doi": "10.1109/TVCG.2025.3537898"
       },
       {
         "title": "Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings",

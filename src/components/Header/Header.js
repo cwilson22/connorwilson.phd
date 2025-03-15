@@ -39,7 +39,7 @@ const items = [
   {
     name: 'Employment', path: '/work',
   },
-  { name: 'Volunteerism', path: '/publicity',
+  { name: 'Service', path: '/publicity',
     //   subpath:[
     //   {
     //   name: 'Awards',
