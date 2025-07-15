@@ -71,6 +71,15 @@
 ],
   "publications": [
       {
+        "title": "CINDER: An expressive framework for optimal layered graph layouts",
+        "authors":"Wilson, C., Puerta E.,  and Dunne C.",
+        "venue": "Under Submission, IEEE Transactions on Visualization and Computer Graphics",
+        "year":"2025",
+        "url" : "https://osf.io/9cywt/",
+        "image": "teaser_right_profile_image.png",
+        "website": "https://visdunneright.github.io/aesthetic-metrics-gallery/"
+      },
+      {
         "title": "Fast and readable layered network visualizations using large neighborhood search",
         "authors":"Wilson, C., Crnovrsanin T., Puerta E.,  and Dunne C.",
         "venue": "IEEE Transactions on Visualization and Computer Graphics",
@@ -97,7 +106,7 @@
         "title": "Evaluating Graph Layout Algorithms: A Systematic Review of Methods and Best Practices",
         "authors": "Di Bartolomeo S., Crnovrsanin T., Saffo D., Puerta E., Wilson, C., and Dunne C.",
         "venue": "Computer Graphics Forum—EuroVis/CGF",
-        "year": "2023",
+        "year": "2024",
         "supplement" : "https://osf.io/dn5zq/",
         "url" : "https://osf.io/ms27r/",
         "doi": "10.1111/cgf.15073",
@@ -113,7 +122,7 @@
         "url" : "https://osf.io/7rsau",
         "supplement" : "https://osf.io/j7ucv/",
         "website": "https://visdunneright.github.io/gd_benchmark_sets/",
-        "image": "./benchmark.png"
+        "image": "benchmark.png"
       },
       {
         "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
@@ -122,8 +131,8 @@
         "year":"2023",
         "url" : "https://osf.io/um9gs/",
         "code": "https://github.com/VisDunneRight/Indy-Survey-Tool",
-        "doi": "10.31219/osf.io/um9gs",
-        "fulldoi": "https://doi.org/10.31219/osf.io/um9gs",
+        "doi": "10.1109/VIS54172.2023.00038",
+        "fulldoi": "https://doi.org/10.1109/VIS54172.2023.00038",
         "image": "indy.png"
       }
     ],
