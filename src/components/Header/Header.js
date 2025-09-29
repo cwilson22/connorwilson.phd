@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { Nav, Navbar} from 'react-bootstrap';
-import { StyledNavMain, StyledNavSub } from './styles';
+import { StyledNavMain, StyledNavSub, StyledBrand } from './styles';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const items = [
@@ -34,21 +34,25 @@ const items = [
     //   },
     // ]
   },
-  // { name: 'Projects', path: '/projects',
+  {
+    name: 'Projects', path: '/projects',
+  },
+  // {
+  //   name: 'Employment', path: '/work',
+  // },
+  // { name: 'Service', path: '/publicity',
+  //   //   subpath:[
+  //   //   {
+  //   //   name: 'Awards',
+  //   //   path: '/publicity#awards' 
+  //   //   }
+  //   // ] 
+  // },
+  // {
+  //   name: 'Awards', path: '/awards',
   // },
   {
-    name: 'Employment', path: '/work',
-  },
-  { name: 'Service', path: '/publicity',
-    //   subpath:[
-    //   {
-    //   name: 'Awards',
-    //   path: '/publicity#awards' 
-    //   }
-    // ] 
-  },
-  {
-    name: 'Awards', path: '/awards',
+    name: 'Resume/CV', path: '/resume',
   },
 ];
 
@@ -58,9 +62,11 @@ const Header = () => {
   return (
     // <Navbar expand = "lg" bg="light" variant="light" fixed= "top">
     
-    <Navbar fluid="true" expand="lg">
+    <Navbar fluid="true" expand="md">
       <LinkContainer to="/">
-        <Navbar.Brand style={{fontSize: "2rem"}} >Connor Wilson</Navbar.Brand>
+        <Navbar.Brand>
+          <StyledBrand>Connor Wilson</StyledBrand>
+        </Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -68,7 +74,7 @@ const Header = () => {
           {items.map((i, idx) => (
             <Nav.Item  key={idx} className="flex-column">
               <LinkContainer to={i.path}>
-              <StyledNavMain style ={{color: "#000000"}}
+              <StyledNavMain
                 key={i.name}
               >
                 {i.name}

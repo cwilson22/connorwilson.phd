@@ -1,3 +1,8 @@
-para-remove-spacing {
+.para-remove-spacing {
     margin-bottom: 0;
+}
+
+/* Dark theme overrides for Publicity page */
+.dark-theme .para-remove-spacing {
+    color: #b0b0b0;
 }

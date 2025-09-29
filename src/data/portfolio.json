@@ -138,16 +138,150 @@
     ],
   "projects": [
     {
-      "title": "Crossing Minimization in Layered Networks",
-      "summary": "",
-      "entries": [
+      "title": "Layered Graph Drawing with Optimization Modeling",
+      "image" : "projects/graph2993.png",
+      "imageBig": "projects/cfgvis.png",
+      "imageLayout": "top",
+      "url" : "https://github.com/VisDunneRight/layered-crossing-minimization/tree/main",
+      "summary": "The bulk of my PhD research has been to develop a library for creating high-quality layered graph drawings, optimizing for edge crossings, edge length, and other aesthetic metrics. The library uses Gurobi to solve convex optimization problems to create the layouts, though some layouts are also avaiable with an open-source solver, HiGHS.",
+      "tags": [
         {
-          "title": "Coming Soon",
-          "html": [
-            {
-              "p": "..."
-            }
-          ]
+          "name": "Linear Programming",
+          "type": "concept"
+        },
+        {
+          "name": "Python",
+          "type": "code"
+        },
+        {
+          "name": "Gurobi",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "title": "Graph Benchmark Datasets",
+      "image" : "projects/benchmark_site.png",
+      "imageLayout": "side",
+      "url" : "https://visdunneright.github.io/gd_benchmark_sets/",
+      "summary": "We built a website to help graph drawing researchers find benchmark datasets to use for evaluating graph layout algorithms. I was responsible for much of the data analysis, recovering datasets from internet archives and directly from the authors and cleaning/transforming into modern storage formats.",
+      "tags": [
+        {
+          "name": "Web Dev",
+          "type": "concept"
+        },
+        {
+          "name": "Python",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "title": "Svelte Image Timeline",
+      "image" : "projects/timeline.png",
+      "imageLayout": "side",
+      "url" : "",
+      "summary": "In my time at Kostas Research Institute I built a number of Svelte components, one of which is this image timeline that displays images and marks them on a map. The timeline is fully interactive, allowing users to brush and zoom on the timeline overview to focus on a specific time period, or select an image to highlight it on the map and see it in the image viewer.",
+      "tags": [
+        {
+          "name": "Web Dev",
+          "type": "concept"
+        },
+        {
+          "name": "Svelte",
+          "type": "code"
+        },
+        {
+          "name": "HTML",
+          "type": "code"
+        },
+        {
+          "name": "Javascript",
+          "type": "code"
+        },
+        {
+          "name": "Postgres",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "title": "Interpreting PDFs with Multiple Forecasts",
+      "image" : "projects/mfv_pdf.png",
+      "url" : "",
+      "summary": "We investigated different strategies viewers of probability density functions (PDFs) with multiple forecasts use to understand the true probability of an event. As part of the project team, I studied the mathematical properties of skew-normal distributions, recommended solutions for performing a user study on their interpretability, assisted with paper writing and revisions.",
+      "tags": [
+        {
+          "name": "Statistics",
+          "type": "concept"
+        },
+        {
+          "name": "Study Design",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Graph Aesthetic Metrics Gallery",
+      "image" : "projects/aesthetic_gallery.png",
+      "url" : "https://visdunneright.github.io/aesthetic-metrics-gallery/gallery",
+      "summary": "I built a gallery of graph aesthetic metrics to help researchers and practitioners understand the different metrics as a companion to my paper \"CINDER: An expressive framework for optimal layered graph layouts\". The website allows users to select a metric and see how it looks when optimized on a variety of graphs.",
+      "tags": [
+        {
+          "name": "Web Dev",
+          "type": "concept"
+        },
+        {
+          "name": "Linear Programming",
+          "type": "concept"
+        },
+        {
+          "name": "Svelte",
+          "type": "code"
+        },
+        {
+          "name": "Python",
+          "type": "code"
+        },
+        {
+          "name": "Gurobi",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "title": "Indy Survey Tool",
+      "image" : "projects/indy_full.png",
+      "imageBig": "projects/indy_half.png",
+      "imageLayout": "side",
+      "url" : "https://github.com/VisDunneRight/Indy-Survey-Tool",
+      "summary": "We built a framework to help researchers present and visualize literature reviews. By tagging papers in your literature survey with keywords, the tool allows for filtering papers and creates timeline and correlation plots of the results.",
+      "tags": [
+        {
+          "name": "Web Dev",
+          "type": "concept"
+        },
+        {
+          "name": "Svelte",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "title": "ML Models for Graph Drawing",
+      "image" : "projects/GNN.png",
+      "imageBig": "projects/stratisml_output.png",
+      "imageLayout": "top",
+      "url" : "",
+      "summary": "We trained a graph neural network to create layouts of graphs learning from drawings with optimal layouts, which was able to create layouts with comparable numbers of crossings to the optimal layouts.",
+      "tags": [
+        {
+          "name": "Python",
+          "type": "code"
+        },
+        {
+          "name": "Pytorch",
+          "type": "code"
         }
       ]
     }
