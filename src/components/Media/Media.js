@@ -1,21 +1,18 @@
 import React from 'react';
 import {FaEnvelope, FaGraduationCap, FaLinkedin} from "react-icons/fa"
 import {AiFillGithub} from 'react-icons/ai'
-import { useTheme } from '../../contexts/ThemeContext';
 import { StyledSocialMedia } from '../Header/styles';
 
 export const Media = ({media}) => {
-  const { colors } = useTheme();
-  
   return (
       <div className="col-6 col-md-6">
         <StyledSocialMedia>
           <ul className="list-unstyled text-small mb-0">
             <li>
               <div>
-                <FaEnvelope style={{ color: colors.textMuted }} />
+                <FaEnvelope style={{ color: '#6c757d' }} />
                 &nbsp;
-                <a style={{ color: colors.textMuted }} href="mailto:wilson.conn@northeastern.edu">Email</a>
+                <a style={{ color: '#6c757d' }} href="mailto:wilson.conn@northeastern.edu">Email</a>
               </div>
             </li>
             {media.profiles.map((prof, idx) => (
@@ -24,16 +21,16 @@ export const Media = ({media}) => {
                     {(function(){
                       switch(prof.iconName){
                         case 'github':
-                          return <AiFillGithub style={{ color: colors.textMuted }} />
+                          return <AiFillGithub style={{ color: '#6c757d' }} />
                         case 'linkedin':
-                          return <FaLinkedin style={{ color: colors.textMuted }} />
+                          return <FaLinkedin style={{ color: '#6c757d' }} />
                         case 'scholar':
-                          return <FaGraduationCap style={{ color: colors.textMuted }} />
+                          return <FaGraduationCap style={{ color: '#6c757d' }} />
                       }
                     })()}
                     &nbsp;
                 </span>
-                <a key={idx} style={{ color: colors.textMuted }}
+                <a key={idx} style={{ color: '#6c757d' }}
                 href={prof.url}>
                   {prof.network}
                 </a>

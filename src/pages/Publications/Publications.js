@@ -3,7 +3,6 @@ import Layout from '../../components/Layout';
 import { SectionTitle} from '../../styles';
 import { Row, Col} from 'react-bootstrap';
 import {StyledImage} from './styles';
-import { useTheme } from '../../contexts/ThemeContext';
 
 const BoldName = ({text = ''})=>{
     return (
@@ -15,7 +14,7 @@ const BoldName = ({text = ''})=>{
       )
 }
 
-const Papers = ({papers, colors}) => {
+const Papers = ({papers}) => {
     return (
         <>
         {papers.map(pub => (
@@ -24,27 +23,27 @@ const Papers = ({papers, colors}) => {
                 <a href={pub.url} target="_blank" rel='noreferrer'><StyledImage src={`${process.env.PUBLIC_URL}/${pub.image}`} thumbnail /></a>
             </Col>
             <Col xs={8} md={8}>
-                <h4 style={{ color: colors.text }}>{pub.title}</h4>
-                <p style={{ color: colors.textSecondary }}>
+                <h4 style={{ color: "#000000" }}>{pub.title}</h4>
+                <p style={{ color: "#6c757d" }}>
                     <BoldName text={pub.authors}></BoldName>
                     {pub.venue}
                     {". "}
                     {pub.year}
                     {". "}
-                    {pub.doi ? <><span>DOI:</span><a href={pub.fulldoi} style={{ color: colors.link }}>{pub.doi}</a><span>.</span></> : null}
+                    {pub.doi ? <><span>DOI:</span><a href={pub.fulldoi} style={{ color: "#0066cc" }}>{pub.doi}</a><span>.</span></> : null}
                 </p>
-                <p style={{ color: colors.textSecondary }}>
-                    {pub.url ? <a href={pub.url} style={{ color: colors.link }}>Preprint</a> : null}
+                <p style={{ color: "#6c757d" }}>
+                    {pub.url ? <a href={pub.url} style={{ color: "#0066cc" }}>Preprint</a> : null}
                     {pub.supplement ? <span> | </span> : null}
-                    {pub.supplement ? <a href={pub.supplement} style={{ color: colors.link }}>Supplement</a> : null}
+                    {pub.supplement ? <a href={pub.supplement} style={{ color: "#0066cc" }}>Supplement</a> : null}
                     {pub.video ? <span> | </span> : null}
-                    {pub.video ? <a href={pub.video} style={{ color: colors.link }}>Video</a> : null}
+                    {pub.video ? <a href={pub.video} style={{ color: "#0066cc" }}>Video</a> : null}
                     {pub.previewvideo ? <span> | </span> : null}
-                    {pub.previewvideo ? <a href={pub.previewvideo} style={{ color: colors.link }}>Preview Video</a> : null}
+                    {pub.previewvideo ? <a href={pub.previewvideo} style={{ color: "#0066cc" }}>Preview Video</a> : null}
                     {pub.code ? <span> | </span> : null}
-                    {pub.code ? <a href={pub.code} style={{ color: colors.link }}>Code</a> : null}
+                    {pub.code ? <a href={pub.code} style={{ color: "#0066cc" }}>Code</a> : null}
                     {pub.website ? <span> | </span> : null}
-                    {pub.website ? <a href={pub.website} style={{ color: colors.link }}>Website</a> : null}
+                    {pub.website ? <a href={pub.website} style={{ color: "#0066cc" }}>Website</a> : null}
                 </p>
             </Col>
             </Row>
@@ -54,13 +53,11 @@ const Papers = ({papers, colors}) => {
 }
 
 const Publications = ({ user }) => {
-  const { colors } = useTheme();
-  
   return (
     <Layout user={user}>
       <div>
         <SectionTitle></SectionTitle>
-        <Papers papers = {user.publications} colors={colors}/>
+        <Papers papers = {user.publications}/>
       </div>
     </Layout>
   );

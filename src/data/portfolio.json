@@ -225,7 +225,7 @@
       "title": "Graph Aesthetic Metrics Gallery",
       "image" : "projects/aesthetic_gallery.png",
       "url" : "https://visdunneright.github.io/aesthetic-metrics-gallery/gallery",
-      "summary": "I built a gallery of graph aesthetic metrics to help researchers and practitioners understand the different metrics as a companion to my paper \"CINDER: An expressive framework for optimal layered graph layouts\". The website allows users to select a metric and see how it looks when optimized on a variety of graphs.",
+      "summary": "I built a gallery of graph aesthetic metrics to help researchers and practitioners understand the different metrics as a companion to my paper, \"CINDER: An expressive framework for optimal layered graph layouts.\" The website allows users to select metrics and see how they look when optimized on a variety of graphs.",
       "tags": [
         {
           "name": "Web Dev",

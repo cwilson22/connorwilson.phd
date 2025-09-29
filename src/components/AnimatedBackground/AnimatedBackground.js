@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { useTheme } from '../../contexts/ThemeContext';
 
 const AnimatedBackground = () => {
   const canvasRef = useRef(null);
@@ -7,7 +6,7 @@ const AnimatedBackground = () => {
   const pointsRef = useRef([]);
   const targetRef = useRef({ x: 0, y: 0 });
   const animateHeaderRef = useRef(true);
-  const { isDarkMode } = useTheme();
+  const isDarkMode = false;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -216,7 +215,7 @@ const AnimatedBackground = () => {
           width: '100%',
           height: '100%',
           zIndex: -1, // Changed from -2 to -1
-          background: isDarkMode ? '#1a1a1a' : '#ffffff',
+          background: '#ffffff',
           display: 'block'
         }}
       />

@@ -13,118 +13,42 @@ code {
     monospace;
 }
 
-/* Light theme (default) */
-.light-theme {
+/* Default theme styles */
+body {
   background-color: #ffffff;
   color: #000000;
 }
 
-.light-theme .navbar {
+.navbar {
   background-color: rgba(248, 249, 250, 0) !important;
   /* backdrop-filter: blur(10px); */
 }
 
-.light-theme .navbar-brand {
-  /* color: #000000 !important; */
-}
-
-.light-theme .nav-link {
-  /* color: #000000 !important; */
-}
-
-.light-theme .card {
+.card {
   background-color: #ffffff;
   border: 1px solid #dee2e6;
 }
 
-.light-theme .card-body {
+.card-body {
   background-color: #ffffff;
 }
 
-.light-theme .text-muted {
+.text-muted {
   color: #6c757d !important;
 }
 
-.light-theme hr {
+hr {
   border-color: #dee2e6;
 }
 
-.light-theme a {
+a {
   color: #0066cc;
 }
 
-.light-theme a:hover {
+a:hover {
   color: #0056b3;
 }
 
-/* Dark theme */
-.dark-theme {
-  background-color: #1a1a1a;
-  color: #ffffff;
-}
-
-.dark-theme .navbar {
-  background-color: rgba(26, 26, 26, 0) !important;
-}
-
-.dark-theme .navbar-brand {
-  color: #ffffff !important;
-}
-
-.dark-theme .nav-link {
-  color: #ffffff !important;
-}
-
-.dark-theme .nav-link:hover {
-  color: #4dabf7 !important;
-}
-
-.dark-theme .card {
-  background-color: #2d2d2d;
-  border: 1px solid #404040;
-  color: #ffffff;
-}
-
-.dark-theme .card-body {
-  background-color: #2d2d2d;
-  color: #ffffff;
-}
-
-.dark-theme .card-title {
-  color: #ffffff !important;
-}
-
-.dark-theme .card-text {
-  color: #b0b0b0 !important;
-}
-
-.dark-theme .text-muted {
-  color: #888888 !important;
-}
-
-.dark-theme hr {
-  border-color: #404040;
-}
-
-.dark-theme a {
-  color: #4dabf7;
-}
-
-.dark-theme a:hover {
-  color: #74c0fc;
-}
-
-.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
-  color: #ffffff;
-}
-
-.dark-theme p {
-  color: #b0b0b0;
-}
-
-.dark-theme .container {
-  background-color: transparent;
-}
 
 /* Theme toggle button */
 .theme-toggle {
@@ -137,17 +61,12 @@ code {
   transition: all 0.3s ease;
 }
 
-.light-theme .theme-toggle {
+.theme-toggle {
   background-color: #f8f9fa;
   color: #000000;
   border-color: #dee2e6;
 }
 
-.dark-theme .theme-toggle {
-  background-color: #2d2d2d;
-  color: #ffffff;
-  border-color: #404040;
-}
 
 .theme-toggle:hover {
   opacity: 0.8;
@@ -165,13 +84,9 @@ code {
   pointer-events: none;
 }
 
-/* Dark theme animated background */
-.dark-theme .animated-background canvas {
-  background: #1a1a1a !important;
-}
 
-/* Light theme animated background */
-.light-theme .animated-background canvas {
+/* Animated background */
+.animated-background canvas {
   background: #ffffff !important;
 }
 
@@ -210,16 +125,6 @@ code {
     border: 1px solid rgba(0, 0, 0, 0.05) !important;
   }
 
-  /* Dark theme adjustments for sandwich menu */
-  .dark-theme .navbar-toggler {
-    background: rgba(45, 45, 45, 0.9) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  }
-
-  .dark-theme .navbar-collapse {
-    background: rgba(45, 45, 45, 0.95) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  }
 
   /* Remove shadow hover effects from nav links in mobile dropdown */
   .navbar-collapse .nav-link:hover {

@@ -1,29 +1,26 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle } from '../../styles';
-import { useTheme } from '../../contexts/ThemeContext';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const Resume = ({ user }) => {
-  const { colors } = useTheme();
-  
   return (
     <Layout user={user}>
       <Container>
         <Row className="justify-content-center">
           <Col lg={11} xl={12}>
             <div style={{ 
-              backgroundColor: colors.surface, 
+              backgroundColor: '#ffffff', 
               padding: '2rem', 
               borderRadius: '10px',
-            //   border: `1px solid ${colors.border}`,
+            //   border: '1px solid #dee2e6',
               marginBottom: '2rem'
             }}>
               {/* PDF Viewer */}
               <div style={{ 
                 width: '100%', 
                 height: '85vh', 
-                border: `2px solid ${colors.border}`,
+                border: '2px solid #dee2e6',
                 borderRadius: '8px',
                 overflow: 'hidden'
               }}>
@@ -33,7 +30,7 @@ const Resume = ({ user }) => {
                   height="100%"
                   style={{
                     border: 'none',
-                    backgroundColor: colors.background
+                    backgroundColor: '#ffffff'
                   }}
                   title="Resume/CV"
                 />
@@ -46,8 +43,8 @@ const Resume = ({ user }) => {
                   href={`${process.env.PUBLIC_URL}/resume.pdf`}
                   download="Connor_Wilson_Resume.pdf"
                   style={{
-                    backgroundColor: colors.link,
-                    borderColor: colors.link,
+                    backgroundColor: '#0066cc',
+                    borderColor: '#0066cc',
                     color: '#ffffff',
                     padding: '0.75rem 2rem',
                     fontSize: '1.1rem',
@@ -64,7 +61,7 @@ const Resume = ({ user }) => {
               <div style={{ 
                 textAlign: 'center', 
                 marginTop: '1rem',
-                color: colors.textSecondary,
+                color: '#6c757d',
                 fontSize: '0.9rem'
               }}>
                 <p>
@@ -73,7 +70,7 @@ const Resume = ({ user }) => {
                     href={`${process.env.PUBLIC_URL}/resume.pdf`} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    style={{ color: colors.link, marginLeft: '0.5rem' }}
+                    style={{ color: '#0066cc', marginLeft: '0.5rem' }}
                   >
                     Open in new tab
                   </a>

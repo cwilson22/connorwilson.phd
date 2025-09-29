@@ -14,7 +14,7 @@ export const StyledNavMain = styled(Nav.Link)`
     box-shadow: none;
 
     &:hover {
-        color: ${props => props.theme?.colors?.linkHover || 'inherit'} !important;
+        color: ${props => props.$isActive ? 'inherit' : '#0066cc'} !important;
         background: rgba(255, 255, 255, 0.15);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         transform: translateY(-1px);

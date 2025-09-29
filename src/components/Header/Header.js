@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Nav, Navbar} from 'react-bootstrap';
 import { StyledNavMain, StyledNavSub, StyledBrand } from './styles';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -57,7 +57,7 @@ const items = [
 ];
 
 const Header = () => {
-  // const location = useLocation();
+  const location = useLocation();
 
   return (
     // <Navbar expand = "lg" bg="light" variant="light" fixed= "top">
@@ -76,6 +76,7 @@ const Header = () => {
               <LinkContainer to={i.path}>
               <StyledNavMain
                 key={i.name}
+                $isActive={location.pathname === i.path}
               >
                 {i.name}
               </StyledNavMain>
