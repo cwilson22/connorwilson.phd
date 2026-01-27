@@ -53,7 +53,7 @@
     {
       "title": "Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings",
       "summary": "We categorize the state-of-the-art linear programming formulations for exact crossing minimization on layered networks and evaluate nine new and existing techniques. Through an expansive computational evaluation, we explore how the techniques assist or inhibit one another. Our best-performing techniques yielded a median improvement of 2.5-17x depending on the solver used.",
-      "image" : "ILPteaser.svg",
+      "image" : "ILPteaser.png",
       "link" : "/publications"
     },
     {
@@ -70,6 +70,25 @@
     }
 ],
   "publications": [
+      {
+        "title": "Examining Interpretation Strategies for Multiple Forecast Visualizations with Two and Four Forecasts",
+        "authors":"Padilla L., Fygenson R., Wilson, C., Potter K., and Castro S.",
+        "venue": "ACM Computer-Human Interaction—CHI",
+        "year":"2026",
+        "image": "mfv_pdf.png",
+        "bigimage": "proxies.png"
+      },
+      {
+        "title": "GLaDOS: Graph Layout Algorithm Datasets for Open Science",
+        "authors":"Di Bartolomeo S., Wilson, C., Puerta E., Crnovrsanin T., Frings A., and Dunne C.",
+        "venue": "Journal of Visualization—JoVI",
+        "year":"2025",
+        "url" : "https://www.journalovi.org/2024-dibartolomeo-benchmark/",
+        "openaccess": "https://www.journalovi.org/2024-dibartolomeo-benchmark/",
+        "website": "https://visdunneright.github.io/gd_benchmark_sets/",
+        "supplement": "https://osf.io/q4697/",
+        "image": "scotchgraph.png"
+      },
       {
         "title": "CINDER: An expressive framework for optimal layered graph layouts",
         "authors":"Wilson, C., Puerta E.,  and Dunne C.",
@@ -98,7 +117,7 @@
         "url" : "https://osf.io/abz8e",
         "supplement" : "https://osf.io/5vq79/",
         "previewvideo": "https://youtu.be/wIQnahaRsKk",
-        "image": "ILPteaser.svg",
+        "image": "ILPteaser.png",
         "fulldoi": "https://doi.org/10.1109/TVCG.2024.3456349",
         "doi": "10.1109/TVCG.2024.3456349"
       },
@@ -122,7 +141,8 @@
         "url" : "https://osf.io/7rsau",
         "supplement" : "https://osf.io/j7ucv/",
         "website": "https://visdunneright.github.io/gd_benchmark_sets/",
-        "image": "benchmark.png"
+        "image": "benchmark.png",
+        "bigimage": "GD_2023_poster.pdf"
       },
       {
         "title": "Indy Survey Tool: A framework to unearth correlations in survey data",
@@ -140,14 +160,42 @@
     {
       "title": "Layered Graph Drawing with Optimization Modeling",
       "image" : "projects/graph2993.png",
-      "imageBig": "projects/cfgvis.png",
+      "imageBig": "projects/cindergraph-prototype.png",
       "imageLayout": "top",
       "url" : "https://github.com/VisDunneRight/layered-crossing-minimization/tree/main",
-      "summary": "The bulk of my PhD research has been to develop a library for creating high-quality layered graph drawings, optimizing for edge crossings, edge length, and other aesthetic metrics. The library uses Gurobi to solve convex optimization problems to create the layouts, though some layouts are also avaiable with an open-source solver, HiGHS.",
+      "summary": "The bulk of my PhD research has been to develop a library for creating layered graph drawings optimizing for edge crossings, edge length, and other aesthetic metrics. This includes a standalone application that allows users to import graphs, choose metrics, then optimize and customize the layout to create a high-quality graph visualization. The library uses Gurobi to solve a convex optimization problem to determine the layouts, and supports HiGHS for open-source solving.",
       "tags": [
         {
           "name": "Linear Programming",
           "type": "concept"
+        },
+        {
+          "name": "Python",
+          "type": "code"
+        },
+        {
+          "name": "Gurobi",
+          "type": "code"
+        }
+      ]
+    },
+    {
+      "title": "Graph Aesthetic Metrics Gallery",
+      "image" : "projects/aesthetic_gallery.png",
+      "url" : "https://visdunneright.github.io/aesthetic-metrics-gallery/gallery",
+      "summary": "I built a gallery of graph aesthetic metrics to help researchers and practitioners understand the different metrics as a companion to my paper, \"CINDER: An expressive framework for optimal layered graph layouts.\" The website allows users to select metrics and see how they look when optimized on a variety of graphs.",
+      "tags": [
+        {
+          "name": "Web Dev",
+          "type": "concept"
+        },
+        {
+          "name": "Linear Programming",
+          "type": "concept"
+        },
+        {
+          "name": "Svelte",
+          "type": "code"
         },
         {
           "name": "Python",
@@ -206,6 +254,23 @@
       ]
     },
     {
+      "title": "Amoebas: A Visualization Metaphor",
+      "image" : "projects/amoeba.png",
+      "imageLayout": "side",
+      "url" : "",
+      "summary": "We created Amoebas, a visual metaphor for online discussion forums that allows researchers to examine social interactions, compare thread structure, and make hypotheses about the patterns or trends of discussion forums. Amoebas are clustered around a starting post, and replies to the starting post that form discussion chains branch off as tendrils. To encode additional data such as for sentiment analysis, we developed color schemes that can encode data on the nodes, on the tendrils, and/or on the outine of the entire amoeba structure.",
+      "tags": [
+        {
+          "name": "Study Design",
+          "type": "concept"
+        },
+        {
+          "name": "C++",
+          "type": "code"
+        }
+      ]
+    },
+    {
       "title": "Interpreting PDFs with Multiple Forecasts",
       "image" : "projects/mfv_pdf.png",
       "url" : "",
@@ -218,34 +283,6 @@
         {
           "name": "Study Design",
           "type": "concept"
-        }
-      ]
-    },
-    {
-      "title": "Graph Aesthetic Metrics Gallery",
-      "image" : "projects/aesthetic_gallery.png",
-      "url" : "https://visdunneright.github.io/aesthetic-metrics-gallery/gallery",
-      "summary": "I built a gallery of graph aesthetic metrics to help researchers and practitioners understand the different metrics as a companion to my paper, \"CINDER: An expressive framework for optimal layered graph layouts.\" The website allows users to select metrics and see how they look when optimized on a variety of graphs.",
-      "tags": [
-        {
-          "name": "Web Dev",
-          "type": "concept"
-        },
-        {
-          "name": "Linear Programming",
-          "type": "concept"
-        },
-        {
-          "name": "Svelte",
-          "type": "code"
-        },
-        {
-          "name": "Python",
-          "type": "code"
-        },
-        {
-          "name": "Gurobi",
-          "type": "code"
         }
       ]
     },
@@ -268,7 +305,7 @@
       ]
     },
     {
-      "title": "ML Models for Graph Drawing",
+      "title": "Graph Drawing with Maching Learning",
       "image" : "projects/GNN.png",
       "imageBig": "projects/stratisml_output.png",
       "imageLayout": "top",

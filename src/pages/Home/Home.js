@@ -70,12 +70,12 @@ const Home = ({ user }) => {
           </StyledAboutSection>
         </Col>
       </Row>
-      <Row className="ml-3">
+      {/* <Row className="ml-3">
         <div>
           <SectionTitle>Selected Papers</SectionTitle>
           <Cards items={user.selectedpapers} />
         </div>
-      </Row>
+      </Row> */}
       {/* <Row>
         <div>
           <SectionTitle>Selected Projects</SectionTitle>

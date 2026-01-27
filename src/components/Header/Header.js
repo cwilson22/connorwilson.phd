@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
 import { Nav, Navbar} from 'react-bootstrap';
@@ -58,6 +58,23 @@ const items = [
 
 const Header = () => {
   const location = useLocation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 750);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleResumeClick = (e) => {
+    if (isMobile) {
+      e.preventDefault();
+      window.open(`${process.env.PUBLIC_URL}/resume.pdf`, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
     // <Navbar expand = "lg" bg="light" variant="light" fixed= "top">
@@ -73,14 +90,27 @@ const Header = () => {
         <Nav className="ml-auto">
           {items.map((i, idx) => (
             <Nav.Item  key={idx} className="flex-column">
-              <LinkContainer to={i.path}>
-              <StyledNavMain
-                key={i.name}
-                $isActive={location.pathname === i.path}
-              >
-                {i.name}
-              </StyledNavMain>
-              </LinkContainer>
+              {i.name === 'Resume/CV' && isMobile ? (
+                <StyledNavMain
+                  key={i.name}
+                  $isActive={false}
+                  href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleResumeClick}
+                >
+                  {i.name}
+                </StyledNavMain>
+              ) : (
+                <LinkContainer to={i.path}>
+                  <StyledNavMain
+                    key={i.name}
+                    $isActive={location.pathname === i.path}
+                  >
+                    {i.name}
+                  </StyledNavMain>
+                </LinkContainer>
+              )}
               {i.subpath && i.subpath.map(j => (
                   <StyledNavSub
                     element={Link}

@@ -11,9 +11,9 @@ const Footer = ({user}) => {
   return (
     <StyledFooter showHoverShadow={isHomepage}>
       <StyledFooterContent>
-        <Media media ={basics} />
+        {!isHomepage && <Media media ={basics} />}
         <div style={{ textAlign: 'center', marginTop: '20px', color: '#6c757d', fontSize: '0.9rem' }}>
-          © 2025 Connor Wilson
+          © 2026 Connor Wilson
         </div>
       </StyledFooterContent>
     </StyledFooter>

@@ -9,14 +9,40 @@ const MasonryContainer = styled.div`
   margin: 2rem 0;
 `;
 
+const FeaturedCardWrapper = styled.div`
+  margin: 8px;
+  padding: 0px;
+  z-index: ${props => props.isFeatured ? '10' : '1'};
+  position: relative;
+  transition: transform 0.3s ease;
+`;
+
 const ProjectCard = styled.div`
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  background: ${props => props.theme.background || 'white'};
-  margin: 8px;
+  background: ${props => props.isFeatured 
+    ? `linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%), ${props.theme.background || 'white'}`
+    : props.theme.background || 'white'};
+  min-height: ${props => props.isFeatured ? '500px' : 'auto'};
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  ${props => props.isFeatured && `
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      z-index: 1;
+    }
+  `}
   
   &:hover {
     transform: translateY(-4px);
@@ -25,12 +51,12 @@ const ProjectCard = styled.div`
 `;
 
 const ProjectHeader = styled.div`
-  padding: 1rem 1rem 0.5rem;
+  padding: ${props => props.isFeatured ? '1.5rem 1.5rem 0.75rem' : '1rem 1rem 0.5rem'};
 `;
 
 const ProjectTitle = styled.h3`
   margin: 0;
-  font-size: 1.1rem;
+  font-size: ${props => props.isFeatured ? '1.4rem' : '1.1rem'};
   font-weight: 600;
   line-height: 1.3;
   color: ${props => props.theme.text || '#333'};
@@ -40,10 +66,13 @@ const ProjectImage = styled.img`
   width: 100%;
   height: auto;
   display: block;
+  flex-grow: ${props => props.isFeatured ? '1' : '0'};
+  object-fit: ${props => props.isFeatured ? 'cover' : 'contain'};
+  min-height: ${props => props.isFeatured ? '300px' : 'auto'};
 `;
 
 const ProjectFooter = styled.div`
-  padding: 0.5rem 1rem 1rem;
+  padding: ${props => props.isFeatured ? '0.75rem 1.5rem 1.5rem' : '0.5rem 1rem 1rem'};
 `;
 
 const ProjectSummary = styled.p`
@@ -68,6 +97,19 @@ const TechPill = styled.span`
   font-weight: 500;
   color: ${props => props.textColor || '#333'};
   white-space: nowrap;
+`;
+
+const FeaturedBadge = styled.div`
+  float: right;
+  margin-left: 0.75rem;
+  margin-bottom: 0.25rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
 `;
 
 const SectionTitle = styled.h2`
@@ -227,8 +269,7 @@ const ModalImage = styled.img`
   max-height: 400px;
   display: block;
   margin: 20px 20px 20px 20px;
-  border: 2px solid ${props => props.theme.border || '#e0e0e0'};
-  border-radius: 8px;
+  
   object-fit: contain;
 `;
 
@@ -238,8 +279,7 @@ const ModalImageSide = styled.img`
   max-height: 400px;
   margin: 20px 20px 20px 20px;
   display: block;
-  border: 2px solid ${props => props.theme.border || '#e0e0e0'};
-  border-radius: 8px;
+  
   flex-shrink: 0;
   object-fit: contain;
   
@@ -327,38 +367,42 @@ const CloseButton = styled.button`
   }
 `;
 
-const ProjectItem = ({ project, type, onProjectClick }) => {
+const ProjectItem = ({ project, type, onProjectClick, isFeatured }) => {
   const tags = project.tags || [];
   
   return (
-    <ProjectCard onClick={() => onProjectClick(project)}>
-      <ProjectHeader>
-        <ProjectTitle>{project.title}</ProjectTitle>
-      </ProjectHeader>
-      <ProjectImage 
-        src={`${process.env.PUBLIC_URL}/${project.image}`} 
-        alt={project.title}
-        loading="lazy"
-      />
-      <ProjectFooter>
-        {/* <ProjectSummary>{project.summary}</ProjectSummary> */}
-        <TechPillsContainer>
-          {tags.map((tech, index) => {
-            const colors = getTagColors(tech.type);
-            return (
-              <TechPill 
-                key={index}
-                bgColor={colors.bgColor}
-                textColor={colors.textColor}
-                borderColor={colors.borderColor}
-              >
-                {tech.name}
-              </TechPill>
-            );
-          })}
-        </TechPillsContainer>
-      </ProjectFooter>
-    </ProjectCard>
+    <FeaturedCardWrapper isFeatured={isFeatured}>
+      <ProjectCard onClick={() => onProjectClick(project)} isFeatured={isFeatured}>
+        <ProjectHeader isFeatured={isFeatured}>
+          {isFeatured && <FeaturedBadge>phd thesis</FeaturedBadge>}
+          <ProjectTitle isFeatured={isFeatured}>{project.title}</ProjectTitle>
+        </ProjectHeader>
+        <ProjectImage 
+          src={`${process.env.PUBLIC_URL}/${project.image}`} 
+          alt={project.title}
+          loading="lazy"
+          isFeatured={isFeatured}
+        />
+        <ProjectFooter isFeatured={isFeatured}>
+          {/* <ProjectSummary>{project.summary}</ProjectSummary> */}
+          <TechPillsContainer>
+            {tags.map((tech, index) => {
+              const colors = getTagColors(tech.type);
+              return (
+                <TechPill 
+                  key={index}
+                  bgColor={colors.bgColor}
+                  textColor={colors.textColor}
+                  borderColor={colors.borderColor}
+                >
+                  {tech.name}
+                </TechPill>
+              );
+            })}
+          </TechPillsContainer>
+        </ProjectFooter>
+      </ProjectCard>
+    </FeaturedCardWrapper>
   );
 };
 
@@ -504,17 +548,21 @@ const Projects = ({ user }) => {
     <Layout user={user}>
       <MasonryContainer>
         <ResponsiveMasonry
-          columnsCountBreakPoints={{350: 1, 750: 2, 900: 3, 1200: 4}}
+          columnsCountBreakPoints={{350: 1, 750: 2, 1000: 3}}
         >
           <Masonry gutter="0">
-            {allProjects.map((project, index) => (
-              <ProjectItem 
-                key={index} 
-                project={project} 
-                type={user.selectedprojects?.includes(project) ? 'project' : 'paper'}
-                onProjectClick={handleProjectClick}
-              />
-            ))}
+            {allProjects.map((project, index) => {
+              const isFeatured = project.title === "Layered Graph Drawing with Optimization Modeling";
+              return (
+                <ProjectItem 
+                  key={index} 
+                  project={project} 
+                  type={user.selectedprojects?.includes(project) ? 'project' : 'paper'}
+                  onProjectClick={handleProjectClick}
+                  isFeatured={isFeatured}
+                />
+              );
+            })}
           </Masonry>
         </ResponsiveMasonry>
       </MasonryContainer>
